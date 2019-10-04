@@ -1,0 +1,16 @@
+C:\Users\ruddy\Desktop\CIT255\WpfUnitConverter\WpfUnitConverter\WpfUnitConverter\bin\Debug\WpfUnitConverter.exe.config
+C:\Users\ruddy\Desktop\CIT255\WpfUnitConverter\WpfUnitConverter\WpfUnitConverter\bin\Debug\WpfUnitConverter.exe
+C:\Users\ruddy\Desktop\CIT255\WpfUnitConverter\WpfUnitConverter\WpfUnitConverter\bin\Debug\WpfUnitConverter.pdb
+C:\Users\ruddy\Desktop\CIT255\WpfUnitConverter\WpfUnitConverter\WpfUnitConverter\obj\Debug\WpfUnitConverter.csprojAssemblyReference.cache
+C:\Users\ruddy\Desktop\CIT255\WpfUnitConverter\WpfUnitConverter\WpfUnitConverter\obj\Debug\Views\UnitConverterView.g.cs
+C:\Users\ruddy\Desktop\CIT255\WpfUnitConverter\WpfUnitConverter\WpfUnitConverter\obj\Debug\App.g.cs
+C:\Users\ruddy\Desktop\CIT255\WpfUnitConverter\WpfUnitConverter\WpfUnitConverter\obj\Debug\WpfUnitConverter_MarkupCompile.cache
+C:\Users\ruddy\Desktop\CIT255\WpfUnitConverter\WpfUnitConverter\WpfUnitConverter\obj\Debug\WpfUnitConverter_MarkupCompile.lref
+C:\Users\ruddy\Desktop\CIT255\WpfUnitConverter\WpfUnitConverter\WpfUnitConverter\obj\Debug\Views\UnitConverterView.baml
+C:\Users\ruddy\Desktop\CIT255\WpfUnitConverter\WpfUnitConverter\WpfUnitConverter\obj\Debug\WpfUnitConverter.g.resources
+C:\Users\ruddy\Desktop\CIT255\WpfUnitConverter\WpfUnitConverter\WpfUnitConverter\obj\Debug\WpfUnitConverter.Properties.Resources.resources
+C:\Users\ruddy\Desktop\CIT255\WpfUnitConverter\WpfUnitConverter\WpfUnitConverter\obj\Debug\WpfUnitConverter.csproj.GenerateResource.cache
+C:\Users\ruddy\Desktop\CIT255\WpfUnitConverter\WpfUnitConverter\WpfUnitConverter\obj\Debug\WpfUnitConverter.csproj.CoreCompileInputs.cache
+C:\Users\ruddy\Desktop\CIT255\WpfUnitConverter\WpfUnitConverter\WpfUnitConverter\obj\Debug\WpfUnitConverter.exe
+C:\Users\ruddy\Desktop\CIT255\WpfUnitConverter\WpfUnitConverter\WpfUnitConverter\obj\Debug\WpfUnitConverter.pdb
+C:\Users\ruddy\Desktop\CIT255\WpfUnitConverter\WpfUnitConverter\WpfUnitConverter\obj\Debug\GeneratedInternalTypeHelper.g.cs
