@@ -40,7 +40,207 @@ namespace WpfUnitConverter.ViewModels
 
         private void PerformCalculation(object obj)
         {
-            Result = 55; // value to confirm binding
+            switch (ResultUnit)
+            {
+                case "Inches":
+                    switch (OperandUnit)
+                    {
+                        case "Inches":
+                            Result = Operand;
+                            break;
+                        case "Feet":
+                            Result = Operand * 12;
+                            break;
+                        case "Miles":
+                            Result = Operand * 63360;
+                            break;
+                        case "Millimeters":
+                            Result = Operand * 25.4;
+                            break;
+                        case "Centimeters":
+                            Result = Operand * 2.54;
+                            break;
+                        case "Meters":
+                            Result = Operand * .0254;
+                            break;
+                        case "Kilmoeters":
+                            Result = Operand * .0000254;
+                            break;
+                        default:
+                            break;
+                    }
+                    break;
+                case "Feet":
+                    switch (OperandUnit)
+                    {
+                        case "Inches":
+                            Result = Operand / 12;
+                            break;
+                        case "Feet":
+                            Result = Operand;
+                            break;
+                        case "Miles":
+                            Result = Operand * 5280;
+                            break;
+                        case "Millimeters":
+                            Result = Operand * 304.8;
+                            break;
+                        case "Centimeters":
+                            Result = Operand * 30.48;
+                            break;
+                        case "Meters":
+                            Result = Operand * .3048;
+                            break;
+                        case "Kilmoeters":
+                            Result = Operand * .0003048;
+                            break;
+                        default:
+                            break;
+                    }
+                    break;
+                case "Miles":
+                    switch (OperandUnit)
+                    {
+                        case "Inches":
+                            Result = Operand / 63360;
+                            break;
+                        case "Feet":
+                            Result = Operand / 5280;
+                            break;
+                        case "Miles":
+                            Result = Operand;
+                            break;
+                        case "Millimeters":
+                            Result = Operand / 1609000;
+                            break;
+                        case "Centimeters":
+                            Result = Operand / 160900;
+                            break;
+                        case "Meters":
+                            Result = Operand / 1609;
+                            break;
+                        case "Kilmoeters":
+                            Result = Operand / 1.609;
+                            break;
+                        default:
+                            break;
+                    }
+                    break;
+                case "Millimeters":
+                    switch (OperandUnit)
+                    {
+                        case "Inches":
+                            Result = Operand * 25.4;
+                            break;
+                        case "Feet":
+                            Result = Operand * 304.8;
+                            break;
+                        case "Miles":
+                            Result = Operand * 1609000;
+                            break;
+                        case "Millimeters":
+                            Result = Operand;
+                            break;
+                        case "Centimeters":
+                            Result = Operand * 10;
+                            break;
+                        case "Meters":
+                            Result = Operand * 1000;
+                            break;
+                        case "Kilmoeters":
+                            Result = Operand * 1000000;
+                            break;
+                        default:
+                            break;
+                    }
+                    break;
+                case "Centimeters":
+                    switch (OperandUnit)
+                    {
+                        case "Inches":
+                            Result = Operand * 2.54;
+                            break;
+                        case "Feet":
+                            Result = Operand * 30.48;
+                            break;
+                        case "Miles":
+                            Result = Operand * 160934;
+                            break;
+                        case "Millimeters":
+                            Result = Operand * 10;
+                            break;
+                        case "Centimeters":
+                            Result = Operand;
+                            break;
+                        case "Meters":
+                            Result = Operand * 100;
+                            break;
+                        case "Kilmoeters":
+                            Result = Operand * 100000;
+                            break;
+                        default:
+                            break;
+                    }
+                    break;
+                case "Meters":
+                    switch (OperandUnit)
+                    {
+                        case "Inches":
+                            Result = Operand * 0.0254;
+                            break;
+                        case "Feet":
+                            Result = Operand * 0.3048;
+                            break;
+                        case "Miles":
+                            Result = Operand * 1609;
+                            break;
+                        case "Millimeters":
+                            Result = Operand * .001;
+                            break;
+                        case "Centimeters":
+                            Result = Operand * .01;
+                            break;
+                        case "Meters":
+                            Result = Operand;
+                            break;
+                        case "Kilmoeters":
+                            Result = Operand * 1000;
+                            break;
+                        default:
+                            break;
+                    }
+                    break;
+                case "Kilmoeters":
+                    switch (OperandUnit)
+                    {
+                        case "Inches":
+                            Result = Operand * .0000254;
+                            break;
+                        case "Feet":
+                            Result = Operand * .0003048;
+                            break;
+                        case "Miles":
+                            Result = Operand * 1.609;
+                            break;
+                        case "Millimeters":
+                            Result = Operand *.000001;
+                            break;
+                        case "Centimeters":
+                            Result = Operand * .00001;
+                            break;
+                        case "Meters":
+                            Result = Operand * .001;
+                            break;
+                        case "Kilmoeters":
+                            Result = Operand;
+                            break;
+                        default:
+                            break;
+                    }
+                    break;
+                default:
+                    break;
+            }
         }
 
         public UnitConverterViewModel()

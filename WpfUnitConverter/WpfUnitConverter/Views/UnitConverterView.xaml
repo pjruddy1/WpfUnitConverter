@@ -25,6 +25,7 @@
             <StackPanel
                 Orientation="Horizontal">
                 <TextBox
+                    x:Name="Operand1"
                     Width="100"
                     Height="30"
                     Margin="20"
