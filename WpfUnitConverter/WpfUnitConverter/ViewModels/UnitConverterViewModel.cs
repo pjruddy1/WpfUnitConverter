@@ -21,6 +21,8 @@ namespace WpfUnitConverter.ViewModels
 
         public string ResultUnit { get; set; }
 
+        public string Feedback { get; set; }
+
         public double Result
         {
             get { return _result; }
@@ -55,16 +57,16 @@ namespace WpfUnitConverter.ViewModels
                             Result = Operand * 63360;
                             break;
                         case "Millimeters":
-                            Result = Operand * 25.4;
+                            Result = Operand * 0.03937007;
                             break;
                         case "Centimeters":
-                            Result = Operand * 2.54;
+                            Result = Operand * 0.393700787;
                             break;
                         case "Meters":
-                            Result = Operand * .0254;
+                            Result = Operand * 39.3700787;
                             break;
                         case "Kilmoeters":
-                            Result = Operand * .0000254;
+                            Result = Operand * 39370.07874;
                             break;
                         default:
                             break;
@@ -74,7 +76,7 @@ namespace WpfUnitConverter.ViewModels
                     switch (OperandUnit)
                     {
                         case "Inches":
-                            Result = Operand / 12;
+                            Result = Operand * 0.08333333;
                             break;
                         case "Feet":
                             Result = Operand;
@@ -83,16 +85,16 @@ namespace WpfUnitConverter.ViewModels
                             Result = Operand * 5280;
                             break;
                         case "Millimeters":
-                            Result = Operand * 304.8;
+                            Result = Operand * 0.0032808;
                             break;
                         case "Centimeters":
-                            Result = Operand * 30.48;
+                            Result = Operand * 0.03280839;
                             break;
                         case "Meters":
-                            Result = Operand * .3048;
+                            Result = Operand * 3.2808398;
                             break;
                         case "Kilmoeters":
-                            Result = Operand * .0003048;
+                            Result = Operand * 3280.83989;
                             break;
                         default:
                             break;
@@ -102,25 +104,25 @@ namespace WpfUnitConverter.ViewModels
                     switch (OperandUnit)
                     {
                         case "Inches":
-                            Result = Operand / 63360;
+                            Result = Operand * 0.0000157828;
                             break;
                         case "Feet":
-                            Result = Operand / 5280;
+                            Result = Operand * 0.0001893939;
                             break;
                         case "Miles":
                             Result = Operand;
                             break;
                         case "Millimeters":
-                            Result = Operand / 1609000;
+                            Result = Operand * 0.00000062137;
                             break;
                         case "Centimeters":
-                            Result = Operand / 160900;
+                            Result = Operand * 0.00000621;
                             break;
                         case "Meters":
-                            Result = Operand / 1609;
+                            Result = Operand * 0.00062137;
                             break;
                         case "Kilmoeters":
-                            Result = Operand / 1.609;
+                            Result = Operand * 0.62137119;
                             break;
                         default:
                             break;
@@ -136,7 +138,7 @@ namespace WpfUnitConverter.ViewModels
                             Result = Operand * 304.8;
                             break;
                         case "Miles":
-                            Result = Operand * 1609000;
+                            Result = Operand * 1609344;
                             break;
                         case "Millimeters":
                             Result = Operand;
@@ -167,7 +169,7 @@ namespace WpfUnitConverter.ViewModels
                             Result = Operand * 160934;
                             break;
                         case "Millimeters":
-                            Result = Operand * 10;
+                            Result = Operand * .1;
                             break;
                         case "Centimeters":
                             Result = Operand;
@@ -245,7 +247,6 @@ namespace WpfUnitConverter.ViewModels
 
         public UnitConverterViewModel()
         {
-            Operand = 44; // value to confirm binding
             Units = BuildOutUnitComboBoxSource();
             ButtonConvertCommand = new RelayCommand(new Action<object>(PerformCalculation));
         }

@@ -13,6 +13,7 @@ namespace WpfUnitConverter
 
         public RelayCommand(Action<object> action)
         {
+            
             _action = action;
         }
 
