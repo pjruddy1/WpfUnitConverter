@@ -30,7 +30,7 @@
                     Height="30"
                     Margin="20"
                     HorizontalContentAlignment="Right"
-                    Text="{Binding Operand}" LostFocus="TextBoxLostFocus"/>
+                    Text="{Binding OperandString, UpdateSourceTrigger=LostFocus}"/>
                 <ComboBox
                     Width="100"
                     Height="30"
@@ -64,9 +64,11 @@
                 Command="{Binding ButtonConvertCommand}"
                 CommandParameter="Convert"/>
             <Label
-                Width="150"
+                Width="350"
                 Height="40"
                 Margin="40"
+                FontSize="22"
+                Foreground="Red"
                 Content="{Binding Feedback}"/>
 
         </StackPanel>

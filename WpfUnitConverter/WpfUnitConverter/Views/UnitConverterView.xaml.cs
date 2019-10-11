@@ -24,9 +24,5 @@ namespace WpfUnitConverter.Views
             InitializeComponent();
         }
 
-        private void TextBoxLostFocus(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }

@@ -21,7 +21,32 @@ namespace WpfUnitConverter.ViewModels
 
         public string ResultUnit { get; set; }
 
-        public string Feedback { get; set; }
+        private string _feedback;
+
+        private string _operandString;
+
+        public string OperandString
+        {
+            get { return _operandString; }
+            set
+            {
+                _operandString = value;
+                OnPropertyChanged("OperandString");
+                GetFeedback();
+            }
+        }
+
+
+        public string Feedback
+        {
+            get { return _feedback; }
+            set
+            {
+                _feedback = value;
+                OnPropertyChanged("Feedback");
+            }
+        }
+
 
         public double Result
         {
@@ -245,10 +270,32 @@ namespace WpfUnitConverter.ViewModels
             }
         }
 
+        private void GetFeedback()
+        {
+            bool isOperandValid;
+            isOperandValid = double.TryParse(OperandString, out double operand);
+
+            if (!isOperandValid)
+            {
+                Feedback = "Please Enter A Valid Number";
+            }
+            else
+            {
+
+                Operand = operand;
+                Feedback = "";
+            }
+        }
+
         public UnitConverterViewModel()
         {
             Units = BuildOutUnitComboBoxSource();
             ButtonConvertCommand = new RelayCommand(new Action<object>(PerformCalculation));
+        }
+
+        private void ValidateOperand1(object obj)
+        {
+            throw new NotImplementedException();
         }
     }
 }
