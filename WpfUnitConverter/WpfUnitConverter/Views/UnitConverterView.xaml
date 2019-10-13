@@ -36,7 +36,10 @@
                     Height="30"
                     Margin="20"
                     ItemsSource="{Binding Units}"
-                    SelectedItem="{Binding OperandUnit, Mode=TwoWay}">
+                    
+                    SelectedValue="{Binding OperandUnit, Mode=TwoWay}"
+                    SelectedItem="{Binding SelectedConvertCommand}">
+                    <!-- Binding to both the OperandUnit and The Select Command-->
                     
                 </ComboBox>
                 
@@ -54,7 +57,11 @@
                     Height="30"
                     Margin="20"
                     ItemsSource="{Binding Units}"
-                    SelectedItem="{Binding ResultUnit, Mode=TwoWay}">
+                    
+                    
+                    SelectedValue="{Binding ResultUnit, Mode=TwoWay}"
+                    SelectedItem="{Binding Selected2ConvertCommand}">
+                    <!-- Binding to both the Result unit and The Select Command-->
 
                 </ComboBox>
 
@@ -63,6 +70,7 @@
                 Content="Convert"
                 Command="{Binding ButtonConvertCommand}"
                 CommandParameter="Convert"/>
+            
             <Label
                 Width="350"
                 Height="40"
